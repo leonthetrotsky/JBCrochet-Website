@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>JB Crochets</title>
     <link rel="stylesheet" href="styles/index.css">
+    <script src="/./js/main.js"></script>
 </head>
 
 <body>
@@ -16,17 +17,15 @@
         <div id="nav-buttons">
             <a class="nav-btn" href="projects.html">Projects</a>
             <a class="nav-btn" href="about-me.html">About</a>
-            <a class="nav-btn" href="contacts.html">Contact</a>
         </div>
     </nav>
 
     <main id="landing">
         <div class="landing-content">
             <div id="introduction">
-                <h2>Hi, I’m Jenna 👋</h2>
+                <h2>Hi, I'm Jenna</h2>
                 <p>
-                    I create cozy, handmade crochet pieces with care, creativity,
-                    and a love for soft textures.
+                    I crochet, knit, and draw tons of different projects. I hope you enjoy!
                 </p>
             </div>
 
@@ -36,24 +35,32 @@
         </div>
     </main> 
 
+    <section id="video-display">
+        <h2>My most recent video</h2>
+        <div id="video-area"> <!-- Naming variables is difficult -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <iframe id="youtube_video" width="600" height="340" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
     <section id="projects">
         <h2>Featured Projects</h2>
 
         <div class="project-grid">
             <div class="project-card">
-                <img src="images/project1.jpg" alt="Crochet Project 1">
+                <!-- <img src="images/project1.jpg" alt="Crochet Project 1"> -->
                 <h3>Chunky Blanket</h3>
                 <p>Soft, warm, and handmade with premium yarn.</p>
             </div>
 
             <div class="project-card">
-                <img src="images/project2.jpg" alt="Crochet Project 2">
+                <!-- <img src="images/project2.jpg" alt="Crochet Project 2"> -->
                 <h3>Plush Toy</h3>
                 <p>A cute crochet plush made with love.</p>
             </div>
 
             <div class="project-card">
-                <img src="images/project3.jpg" alt="Crochet Project 3">
+                <!-- <img src="images/project3.jpg" alt="Crochet Project 3"> -->
                 <h3>Custom Beanie</h3>
                 <p>Custom colors and sizing available.</p>
             </div>
@@ -66,9 +73,15 @@
         </div>
 
         <div class="footer-right">
-            <a href="https://www.instagram.com/jb.crochet.everyday?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
-            <a href="contacts.html">Contact</a>
+            <a href="https://www.instagram.com/jb.crochet.everyday">
+                <img src="photos/logos/logo-instagram-2.0.png" alt="Instagram">
+            </a>
+            <a href="https://youtube.com/@jb.crochet.everyday">
+                <img src="photos/logos/logo-youtube.png" alt="YouTube">
+            </a>
         </div>
     </footer>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <iframe id="youtube_video" width="600" height="340" frameborder="0" allowfullscreen></iframe> -->
 </body>
 </html>

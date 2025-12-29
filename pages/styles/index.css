@@ -66,7 +66,7 @@ body {
 
 /* ================== Landing ================== */
 #landing {
-    height: 80vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,7 +117,7 @@ body {
     padding: 100px 56px;
     background: rgba(12, 30, 22, 0.35);
     border-top: 1px solid rgba(215, 228, 198, 0.15);
-    border-radius: 48px 48px 0 0;
+    border-radius: 48px;
 }
 
 #projects h2 {
@@ -130,8 +130,23 @@ body {
 /* Project grid */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 32px;
+}
+
+/* Video section */
+#video-display {
+    background: rgba(206, 206, 206, 0.08);
+    border-radius: 18px;
+    border-top: 1px solid rgba(215, 228, 198, 0.15);
+    padding: 100px 56px;
+    text-align: center;
+    justify-content: center;
+}
+
+#video-display h2 {
+    color: #d7e4c6;
+    font-size: 2rem;
+    margin-bottom: 56px;
 }
 
 /* Project cards */
@@ -140,7 +155,6 @@ body {
     border-radius: 18px;
     padding: 18px;
     text-align: center;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .project-card img {
@@ -161,40 +175,58 @@ body {
     opacity: 0.85;
 }
 
-.project-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-}
-
-/* ================== Footer ================== */
 #footer {
-    margin-top: 80px;
-    padding: 32px 56px;
+    margin-top: 100px;
+    padding: 40px 56px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(12, 30, 22, 0.7);
+
+    background: linear-gradient(
+        180deg,
+        rgba(12, 30, 22, 0.85),
+        rgba(8, 20, 15, 0.9)
+    );
+    border-top: 1px solid rgba(215, 228, 198, 0.18);
+    backdrop-filter: blur(8px);
 }
 
-#footer a {
-    color: #d7e4c6;
-    text-decoration: none;
-    margin-left: 18px;
+/* Left text */
+.footer-left p {
     font-size: 0.9rem;
+    opacity: 0.75;
+    color: #d7e4c6;
 }
 
-#footer a:hover {
-    text-decoration: underline;
+/* Right icons */
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 28px;
 }
 
-/* ================== Responsive ================== */
-@media (max-width: 900px) {
+/* Social icons */
+.footer-right img {
+    height: 42px;
+    width: auto;
+    opacity: 0.8;
+    transition: all 0.25s ease;
+    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3));
+}
+
+.footer-right img:hover {
+    opacity: 1;
+    transform: translateY(-2px) scale(1.05);
+}
+
+/* Phone styling*/
+@media (max-width: 1000px) {
     #header {
         padding: 20px 28px;
     }
 
     #landing {
-        height: auto;
+        height: 50%;
         padding: 80px 28px;
     }
 
