@@ -6,7 +6,7 @@
     "configurations": [
     
         {
-            "type": "chrome",
+            "type": "msedge",
             "request": "launch",
             "name": "Open source.html",
             "file": "c:\\Users\\Win11\\Personal_Projects\\Jenna Website\\pages\\source.html"
