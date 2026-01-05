@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <title>JB Crochets</title>
     <link rel="stylesheet" type="text/css"  href="styles/index.css">
+    <link rel="stylesheet" type="text/css"  href="styles/cardStyling.css">
     <meta name="referrer" content="no-referrer">
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="scripts/projects.js" defer></script>
 </head>
 
 <body>
@@ -21,8 +25,23 @@
     </nav>
 
     <!-- Empty landing space -->
-    <main id="landing">
-        <canvas id="c"></canvas>
+    <main id="card-landing">
+        <div class="project-cards">
+            <div class="card">
+                <img src="photos/Black-Butterfly-Selfie.jpg" alt="Denim Jeans" style="width: 30vh; height: 30vh;">
+                <h1>Black Butterfly Shawl</h1>
+                <p class="price">$19.99</p>
+                <p>Some text about the shawl..</p>
+                <p><button>Order Now</button></p>
+            </div>
+            <div class="card">
+                <img src="photos/Picture-of-Picture.jpg" alt="Denim Jeans" style="width: 30vh; height: 30vh;">
+                <h1>Different Thing</h1>
+                <p class="price">$19.99</p>
+                <p>Some text about the shawl..</p>
+                <p><button>Order Now</button></p>
+            </div>
+        </div>
     </main>
 
 
