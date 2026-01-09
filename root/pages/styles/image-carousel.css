@@ -1,0 +1,6 @@
+.splide__slide img {
+    width: 20%;
+    height: 20vh;
+    object-fit: cover;
+    border-radius: 16px;
+}
